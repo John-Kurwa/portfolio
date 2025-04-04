@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* main layout */
+.main {
+    display: flexbox;
+    background-size: cover;
+    height: auto;
+    padding: 0;
+}
+
+/* navigation bar styles */
+.navbar {
+    width: 100%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: bisque;
+    position: fixed;
+}
+
+.icon {
+    width: 100%;
+    float: left;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.logo {
+    color: orange;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, "Helvetica Neue",;
+    float: left;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding-left: 40px;
+}
+
+/* menu bar styles */
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: block;
+}
+
+.menu ul li :hover{
+    background: slategrey;
+    border-radius: 5px;
+}
+
+/* media screen on different devices */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+}   
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+}
+
+/* body */
+.content {
+    color: #000;
+    column-gap: 100px;
+    border-radius: 20px;
+    flex-direction: column;
+    background: url('pictures/background-image2.jpg') center/cover no-repeat;
+    justify-content: center;
+    display: flex;
+    height: 400px;
+}
+
+.content-text-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.content h3 {
+    display: flex;
+    font-family: Cambria;
+    font-size: 40px;
+    color: chocolate;
+}
+
+.content-text-box p {
+    display: flex;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: medium;
+}
+
+.appearance {
+    background-color: #BDB395;
+}
+
+.about .education .skills .projects .contact .h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: medium;
+}
+
+.about-container{
+    display: flex;
+    justify-content: center;
+    background-color: #D5C7A3;
+    padding: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+    margin: 15px auto;
+}
+
+.section {
+    text-align: center;
+    padding: 60px;
+}
+
+.education-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin: 15px;
+}
+
+.education-card {
+    display: flex;
+    background: #ffebcd;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    margin: 15px;
+}
+
+.interests-container {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 15px auto;
+}
+
+.interests-card {
+    display: flex;
+    background: #D4C9BE;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    margin: 15px auto;
+}
+
+.skills-card {
+    display: flex;
+    justify-content: center;
+    background: #d3f9d8;
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    margin: 15px auto;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.projects-card a {
+    color: black; /* Default link color */
+    text-decoration: none; /* Removes underline */
+}
+
+.projects-card a:hover {
+    color: darkblue; /* Changes color on hover */
+    text-decoration: underline; /* Adds underline when hovered */
+}
+
+.projects-card a:active {
+    color: red; /* Changes color when clicked */
+}
+
+.projects-card a:visited {
+    color: black; /* Changes color for visited links */
+}
+
+.projects-card {
+    background: #F1E7E7;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    margin: 15px;
+}
+
+/* footer */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: slategrey;
+    gap: 0.5rem;
+    padding: 1rem 0;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: lightyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.4s ease, background-color 0.3s;
+}
+
+.button:hover {width: 80px;}
+
+.fa-solid {color: #000;}
+
+.fa-brands {color: black;}
+
+.fa-x-twitter:hover {color: black;}
+.fa-solid:hover {color: #000;}
+.fa-envelope:hover {color: yellow;}
+.fa-instagram:hover {color:  #d62976;}
+.fa-linkedin:hover {color: #0077B5;}
+.fa-github:hover {color: #6e5494;}
+
+.mobile {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: none;
+    background: slategrey;
+    font-family: Arial;
+}
+
+.end {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: none;
+    background: slategrey;
+    font-family: Arial;
+}
+
