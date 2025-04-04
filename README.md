@@ -8,7 +8,6 @@ Check it out here 👉 https://john-kurwa.github.io/portfolio/
 ## 🔧 Built With
 - HTML5
 - CSS3
-- JavaScript (if applicable)
 - Responsive design techniques
 
 ## 📁 Features
